@@ -1,0 +1,19 @@
+To-do
+
+Part 1
+- Resist force powers
+- Force move
+- Follow owner
+- Become immobile
+- Dissemble
+- Repair
+
+Part 2
+- 200 starting hitpoints
+- C3PO movement
+- R2 droid parts repair
+- R2 dissemble
+- Luke owns droid
+- Add disabled droids to R2 path
+- Luke repair and dissemble
+- Luke mind control

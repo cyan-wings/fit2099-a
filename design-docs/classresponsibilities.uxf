@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>40</y>
+      <w>280</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>LightsabreAttack
+Package::starwars.action
+--
+-SWActor: target
+--
+_-checkForcePoints(SWActor actor)_
+_-checkForLightsabre(SWActor actor)_
+--
+Responsibilities
+-- Reduces victim's health
+-- Checks if parent character has enough 
+	force points to use this action.
+-- Checks if victim has enough points to
+	resist
+-- Checks if parent character has lightsabre</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>40</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Train
+Package::starwars.action
+--
+_-SWActor: target_
+--
+_-checkForcePoints(SWActor actor)_
+--
+Responsibilities
+-- Increases target Force points
+-- Checks if parent character has enough 
+	force points to use this action.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>40</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>ForceMove
+Package::starwars.action
+--
+_-Direction: direction_
+_-SWActor: target_
+--
+_-checkForcePoints(SWActor actor)_
+--
+Responsibilities
+-- Forces a character to carry out a move
+-- Checks if parent character has enough 
+	force points to use this action.
+-- Checks if victim has enough points to
+	resist</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>730</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>OilCan
+Package::starwars.entities
+--
+Responsibilities
+-- Used to improve droid health</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>520</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>FollowOwner
+Package::starwars.entities.actors.behavior
+--
+Responsibilities
+-- Track droid owner and trigger moves in 
+owner's direction
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>320</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>DroidPart
+Package::starwars.entities
+--
+Responsibilities
+-- Unable to move or carry out actions itself,
+but combines with other DroidPart objects 
+to form or repair a droid to perform new
+actions
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>520</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Repair
+Package::starwars.action
+--
+_-Actor: target_
+--
+Responsibilities
+-- Use DroidPart objects to make Droid 
+mobile again
+-- Increase functionality if more parts are
+added to the droid
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>730</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>UseOilCan
+Package::starwars.action
+--
+_-Actor: target_
+--
+Responsibilities
+-- Use oil can to improve droid health</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>650</x>
+      <y>530</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Disassemble
+Package::starwars.action
+--
+_-Actor: target_
+--
+Responsibilities
+-- Decompose droid in droid parts</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>320</y>
+      <w>280</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Droid
+Package::starwars.entities.actors
+--
+_-SWActor: owner_
+--
+Responsibilities
+-- Move around the map
+-- Respond to encountered items
+-- Able to be repaired with DroidPart objects</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
